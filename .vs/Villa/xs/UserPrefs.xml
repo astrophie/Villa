@@ -1,4 +1,31 @@
 ﻿<Properties StartupConfiguration="{916B50DE-8DB8-4A36-BD71-79A6EB99BD8D}|https">
-  <MonoDevelop.Ide.ItemProperties.Villa__API FirstBuild="True" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Villa_API/Controllers/VillaAPIController.cs">
+    <Files>
+      <File FileName="Villa_API/Controllers/VillaAPIController.cs" Line="11" Column="5" />
+      <File FileName="Villa_API/Models/Dto/VillaDTO.cs" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Villa" expanded="True">
+            <Node name="Villa_API" selected="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Data" expanded="True" />
+              <Node name="Models" expanded="True">
+                <Node name="Dto" expanded="True" />
+              </Node>
+              <Node name="Properties" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
   <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Villa__API PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
 </Properties>
