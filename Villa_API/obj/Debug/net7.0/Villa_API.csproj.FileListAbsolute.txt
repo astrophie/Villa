@@ -31,3 +31,9 @@
 /Users/sophiefeng/Documents/Code/projects/Villa/Villa_API/obj/Debug/net7.0/Villa_API.pdb
 /Users/sophiefeng/Documents/Code/projects/Villa/Villa_API/obj/Debug/net7.0/Villa_API.genruntimeconfig.cache
 /Users/sophiefeng/Documents/Code/projects/Villa/Villa_API/obj/Debug/net7.0/ref/Villa_API.dll
+/Users/sophiefeng/Documents/Code/projects/Villa/Villa_API/bin/Debug/net7.0/Microsoft.AspNetCore.JsonPatch.dll
+/Users/sophiefeng/Documents/Code/projects/Villa/Villa_API/bin/Debug/net7.0/Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+/Users/sophiefeng/Documents/Code/projects/Villa/Villa_API/bin/Debug/net7.0/Newtonsoft.Json.dll
+/Users/sophiefeng/Documents/Code/projects/Villa/Villa_API/bin/Debug/net7.0/Newtonsoft.Json.Bson.dll
+/Users/sophiefeng/Documents/Code/projects/Villa/Villa_API/bin/Debug/net7.0/Serilog.dll
+/Users/sophiefeng/Documents/Code/projects/Villa/Villa_API/bin/Debug/net7.0/Serilog.Sinks.File.dll

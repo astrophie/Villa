@@ -1,8 +1,10 @@
-﻿using Microsoft.AspNetCore.JsonPatch;
-using Microsoft.AspNetCore.Mvc;
-using Villa_API.Data;
+﻿using Villa_API.Data;
 using Villa_API.Models;
 using Villa_API.Models.Dto;
+using Microsoft.AspNetCore.JsonPatch;
+using Microsoft.AspNetCore.Mvc;
+using System.Net;
+using System.Text.Json;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -13,6 +15,11 @@ namespace Villa_API.Controllers
     [ApiController]
     public class VillaAPIController : ControllerBase
     {
+
+        public VillaAPIController()
+        {
+        }
+
         [HttpGet]
         [ProducesResponseType(StatusCodes.Status200OK)]
         public ActionResult<IEnumerable<VillaDTO>> GetVillas()
@@ -24,7 +31,7 @@ namespace Villa_API.Controllers
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public ActionResult<VillaDTO> GetVillas(int id)
+        public ActionResult<VillaDTO> GetVilla(int id)
         {
             if (id == 0)
             {
@@ -99,7 +106,7 @@ namespace Villa_API.Controllers
             return NoContent();
         }
 
-        [HttpPut("{id:int}", Name = "UpdatePartialVilla")]
+        [HttpPatch("{id:int}", Name = "UpdatePartialVilla")]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public IActionResult UpdatePartialVilla(int id, JsonPatchDocument<VillaDTO> patchDTO)
@@ -113,6 +120,11 @@ namespace Villa_API.Controllers
                 return BadRequest();
             }
             patchDTO.ApplyTo(villa, ModelState);
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+            return NoContent();
         }
     }
 }
